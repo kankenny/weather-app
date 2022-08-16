@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Weather App</title>
+<body
+	class="font-body bg-[url('https://source.unsplash.com/random?landscape')] bg-cover backdrop-blur-md"
+>
+	<h1 class="text-3xl font-bold py-2 px-4">Weather App</h1>
+	<!-- Global Container -->
+	<div class="flex items-center justify-center min-h-screen">
+		<!-- Card -->
+		<div
+			class="flex flex-col p-6 bg-slate-200 opacity-80 space-y-10 rounded-2xl shadow-xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16"
+		>
+			<!-- Search -->
+			<div class="flex flex-col items-start">
+				<label
+					class="block text-gray-700 text-sm font-bold mb-2"
+					for="search"
+				>
+					Search for a city:
+				</label>
+				<div class="flex items-center gap-4">
+					<input
+						type="text"
+						class="rounded-lg outline-slate-500 text-black bg-slate-300 hover:bg-slate-500 focus:bg-slate-500 px-3 py-2 h-10 w-80 leading-tight duration-200"
+						id="search"
+						maxlength="30"
+					/>
+					<button>
+						<svg
+							stroke="currentColor"
+							fill="currentColor"
+							stroke-width="0"
+							viewBox="0 0 1024 1024"
+							height="2.75em"
+							width="2.75em"
+							xmlns="http://www.w3.org/2000/svg"
+							class="text-gray-600 bg-slate-300 p-2 rounded-full hover:bg-slate-500 hover:text-gray-900 duration-200"
+						>
+							<path
+								d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
+							></path>
+						</svg>
+					</button>
+				</div>
+			</div>
+
+			<!-- Main Content -->
+			<div class="flex flex-col gap-y-6">
+				<!-- Weather Overview -->
+				<div class="weather-overview">
+					<h1 class="weather-overview text-2xl font-bold">
+						Weather in: New York City
+					</h1>
+					<h2 class="temperature text-xl">Temperature: 56 °F</h2>
+				</div>
+				<!-- Weather Description -->
+				<div class="weather-desc text-sm text-gray-700">
+					<p class="cloudiness">Cloudy</p>
+					<p class="feels-like">Feels like: 58 °F</p>
+					<p class="precipitation">Precipitation: 5%</p>
+					<p class="humidity">Humidity: 60%</p>
+					<p clas="wind-speed">Wind speed: 6.2 km/h</p>
+				</div>
+				<img
+					src="../src/assets/image.jpg"
+					alt="Image Desc"
+					class="image-description h-48 aspect-auto rounded-md"
+				/>
+			</div>
+		</div>
+	</div>
+</body>
