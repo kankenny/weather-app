@@ -33,4 +33,12 @@ export async function displayWeather(fetchWeather) {
 		gifInput.src = gifData.data.images.original.url
 	}
 	displayGIF()
+
+	async function changeBG() {
+		console.log(name)
+		document.body.style.backgroundImage = `url(https://source.unsplash.com/random?${
+			name + '&buildings'
+		})`
+	}
+	changeBG()
 }

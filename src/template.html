@@ -4,9 +4,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Weather App</title>
 <body
-	class="font-body bg-[url('https://source.unsplash.com/random?landscape')] bg-cover backdrop-blur-md overflow-y-hidden duration-200"
+	class="font-body bg-[url('https://source.unsplash.com/random?landscape')] bg-cover backdrop-blur-sm overflow-y-hidden duration-200"
 >
-	<div class="flex justify-between py-2 px-4  bg-zinc-200 dark:bg-zinc-900 opacity-80 duration-200">
+	<div class="flex justify-between pt-2 pb-1 px-4  bg-zinc-200 dark:bg-zinc-900 opacity-80 duration-200">
 		<h1 class="text-3xl dark:text-zinc-100 font-bold">Weather App</h1>
 		<svg class="dark-mode-button fill-black dark:fill-zinc-100 w-12 cursor-pointer hover:scale-120" stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="2.5em" width="2.5em" xmlns="http://www.w3.org/2000/svg"><path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8V16Z""></path><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2ZM12 4V8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16V20C16.4183 20 20 16.4183 20 12C20 7.58172 16.4183 4 12 4Z""></path></svg>
 	</div>
@@ -17,17 +17,17 @@
 			class="flex flex-col p-6 bg-zinc-200 dark:bg-zinc-900 opacity-80 space-y-10 rounded-2xl shadow-2xl md:flex-row md:space-y-0 md:space-x-10 md:m-0 md:p-16 duration-200"
 		>
 			<!-- Search -->
-			<div class="flex flex-col items-start">
+			<div class="flex flex-col items-start ">
 				<label
 					class="block text-gray-700 dark:text-zinc-200 text-sm font-bold mb-2"
 					for="search"
 				>
 					Search for a city:
 				</label>
-				<div class="flex items-center gap-4">
+				<div class="flex items-center gap-4 ">
 					<input
 						type="text"
-						class="search-bar rounded-lg outline-zinc-500 text-black bg-zinc-300 hover:bg-zinc-500 focus:bg-zinc-500 px-3 py-2 h-10 w-80 leading-tight duration-200"
+						class="search-bar rounded-lg outline-gray-700 text-black bg-zinc-600 hover:bg-zinc-700 dark:bg-zinc-200 focus:bg-zinc-500 px-3 py-2 h-10 w-80 leading-tight duration-200"
 						id="search"
 						maxlength="30"
 					/>
@@ -40,7 +40,7 @@
 							height="2.75em"
 							width="2.75em"
 							xmlns="http://www.w3.org/2000/svg"
-							class="search-button text-gray-600 bg-zinc-300 p-2 rounded-full hover:bg-zinc-500 hover:text-gray-900 duration-200"
+							class="search-button text-zinc-200 bg-zinc-600 p-2 rounded-full hover:bg-zinc-700 dark:bg-zinc-200 dark:text-zinc-600 hover:text-gray-900 duration-200"
 						>
 							<path
 								d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"
