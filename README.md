@@ -11,6 +11,10 @@ This project is in partial fulfillment for the full stack JavaScript boot camp o
 -    Request and display weather information on a city
 -    Search functionality
 
+## Usage
+
+- npm run start (requires to have npm installed)
+
 ## Issues
 
 ## Feedback
