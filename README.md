@@ -1,6 +1,6 @@
-# Webpack Template
+# Weather Application
 
-This webpack template/boilerplate was formatted according to colt steele's full webpack tutorial.
+This project is in partial fulfillment for the full stack JavaScript boot camp offered by The Odin Project. This demonstrates asynchronous JavaScript
 
 ## Authors
 
@@ -8,11 +8,8 @@ This webpack template/boilerplate was formatted according to colt steele's full 
 
 ## Features
 
--    Configurable webpack folder structure
--    Minification of HTML, JS, and CSS
--    HTML and style loaders
--    Asset modules in replacement of file loaders
--    Split development and production mode
+-    Request and display weather information on a city
+-    Search functionality
 
 ## Issues
 
