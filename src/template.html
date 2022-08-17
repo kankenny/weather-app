@@ -53,22 +53,30 @@
 				<div class="weather-overview">
 					<h1 class="weather-overview text-2xl font-bold">
 						Weather in:
-						<p class="name- inline-block">New York</p>
+						<p class="name-output inline-block"></p>
 					</h1>
-					<h2 class="temperature text-xl">Temperature: 56 °F</h2>
+					<h2 class="text-xl">
+						Temperature:
+						<p class="temp-output inline-block"></p>
+						°C
+					</h2>
 				</div>
 				<!-- Weather Description -->
 				<div class="weather-desc text-sm text-gray-700">
-					<p class="cloud-output">Cloudy</p>
-					<p class="feels-like">Feels like: 58 °F</p>
-					<p class="precipitation">Precipitation: 5%</p>
-					<p class="humidity">Humidity: 60%</p>
-					<p clas="wind-speed">Wind speed: 6.2 km/h</p>
+					<h6 class="cloud-output">Cloudy</p>
+					<h6>
+						Feels like:
+						<p class="feels-like-output inline-block">58</p>
+						°F
+					</h6>
+					<h6 class="precip-output">Precipitation: 5%</p>
+					<h6>Humidity: <p class="humid-output inline-block">60</p>%</p>
+					<h6>Wind speed: <p class="speed-output inline-block">6.2</p> km/h</h6>
 				</div>
 				<img
 					src="../src/assets/image.jpg"
 					alt="Image Desc"
-					class="image-description h-48 aspect-auto rounded-md"
+					class="icon-output h-48 aspect-auto rounded-md"
 				/>
 			</div>
 		</div>

@@ -1,24 +1,26 @@
-import { weatherData } from './fetch-weather-data'
+import { fetchWeather } from './fetch-weather-data'
 
-export async function displayWeather() {
-	const name = await weatherData.name
-	const icon = await weatherData.weather[0].icon
-	const description = await weatherData.weather[0].description
-	const temp = await weatherData.main.temp
-	const humidity = await weatherData.main.humidity
-	const speed = await weatherData.wind.speed
-	const feelsLike = await weatherData.main.feels_like
+export async function displayWeather(fetchWeather) {
+	const name = await fetchWeather.name
+	const iconCode = await fetchWeather.weather[0].icon
+	const cloud = await fetchWeather.weather[0].description
+	const temp = await fetchWeather.main.temp
+	const humidity = await fetchWeather.main.humidity
+	const speed = await fetchWeather.wind.speed
+	const feelsLike = await fetchWeather.main.feels_like
 
 	let cityInput = document.querySelector('.name-output')
 	cityInput.innerHTML = name
-	// let tempInput = document.querySelector('.city-name')
-	// tempInput.innerHTML = temp
-	// let iconInput = document.querySelector('.city-name')
-	// iconInput.innerHTML = icon
-	// let humidInput = document.querySelector('.city-name')
-	// humidInput.innerHTML = humidity
-	// let speedInput = document.querySelector('.city-name')
-	// speedInput.innerHTML = speed
-	// let descInput = document.querySelector('.city-name')
-	// descInput.innerHTML = name
+	let descInput = document.querySelector('.cloud-output')
+	descInput.innerHTML = cloud.replace(/\b\w/g, (l) => l.toUpperCase())
+	let tempInput = document.querySelector('.temp-output')
+	tempInput.innerHTML = temp
+	let feelsLikeInput = document.querySelector('.feels-like-output')
+	feelsLikeInput.innerHTML = feelsLike
+	let humidInput = document.querySelector('.humid-output')
+	humidInput.innerHTML = humidity
+	let speedInput = document.querySelector('.speed-output')
+	speedInput.innerHTML = speed
+	let iconInput = document.querySelector('.icon-output')
+	iconInput.src = `http://openweathermap.org/img/wn/${iconCode}@2x.png`
 }

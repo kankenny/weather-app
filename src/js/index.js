@@ -1,5 +1,5 @@
 import '../css/style.css'
-import { weatherData } from './fetch-weather-data'
-console.log(weatherData.fetchWeather())
+import { fetchWeather } from './fetch-weather-data'
+import { displayWeather } from './display-weather-data'
 
-console.log(weatherData.name, '123123')
+fetchWeather.fetch()
