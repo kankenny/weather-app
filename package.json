@@ -6,11 +6,13 @@
 	"scripts": {
 		"start": "webpack serve --config webpack.common.js",
 		"build": "webpack --config webpack.common.js",
+		"deploy": "gh-pages -d dist",
 		"lint": "eslint .eslintrc.json"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
+	"homepage": "https://kankenny.github.io/weather-app",
 	"devDependencies": {
 		"@babel/core": "^7.18.10",
 		"@babel/eslint-parser": "^7.18.9",
@@ -34,6 +36,7 @@
 		"webpack-merge": "^5.8.0"
 	},
 	"dependencies": {
-		"css-minimizer-webpack-plugin": "^4.0.0"
+		"css-minimizer-webpack-plugin": "^4.0.0",
+		"gh-pages": "^4.0.0"
 	}
 }
