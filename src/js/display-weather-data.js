@@ -37,7 +37,7 @@ export async function displayWeather(fetchWeather) {
 	async function changeBG() {
 		console.log(name)
 		document.body.style.backgroundImage = `url(https://source.unsplash.com/random?${
-			name + '&buildings'
+			name + '&touristspots'
 		})`
 	}
 	changeBG()
