@@ -1,5 +1,3 @@
-import { fetchWeather } from './fetch-weather-data'
-
 export async function displayWeather(fetchWeather) {
 	const name = await fetchWeather.name
 	const iconCode = await fetchWeather.weather[0].icon
@@ -23,4 +21,16 @@ export async function displayWeather(fetchWeather) {
 	speedInput.innerHTML = speed
 	let iconInput = document.querySelector('.icon-output')
 	iconInput.src = `http://openweathermap.org/img/wn/${iconCode}@2x.png`
+	let gifInput = document.querySelector('.gif-output')
+
+	async function displayGIF() {
+		const response = await fetch(
+			`https://api.giphy.com/v1/gifs/translate?api_key=te4JZG3AydFSNI2KlWEDk4lkptn5JoHx&s=${
+				cloud + 'weather'
+			}&weirdness=0`
+		)
+		const gifData = await response.json()
+		gifInput.src = gifData.data.images.original.url
+	}
+	displayGIF()
 }
